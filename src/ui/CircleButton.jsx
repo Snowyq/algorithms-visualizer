@@ -3,34 +3,25 @@ import styled, { css } from "styled-components";
 const sizes = {
 	small: css`
 		font-size: 1.4rem;
-		padding: 0.4rem 0.8rem;
+		padding: 0.8rem 0.8rem;
 		text-transform: uppercase;
 		font-weight: 600;
 		text-align: center;
 	`,
 	medium: css`
 		font-size: 1.6rem;
-		padding: 1.2rem 1.6rem;
+		padding: 1.6rem 1.6rem;
 		font-weight: 500;
 	`,
 	large: css`
 		font-size: 1.8rem;
-		padding: 1.2rem 2.4rem;
+		padding: 2.4rem 2.4rem;
 		font-weight: 500;
 	`,
 	xlarge: css`
 		font-size: 2rem;
-		padding: 1.4rem 2.8rem;
+		padding: 2.8rem 2.8rem;
 		font-weight: 500;
-	`,
-};
-
-const shapes = {
-	rect: css`
-		border-radius: var(--border-radius-sm);
-	`,
-	circle: css`
-		border-radius: 50%;
 	`,
 };
 
@@ -62,15 +53,13 @@ const variations = {
 	`,
 };
 
-const Button = styled.button`
+const CircleButton = styled.button`
 	border: none;
-	border-radius: var(--border-radius-sm);
+	border-radius: 50%;
 	box-shadow: var(--shadow-sm);
 
 	${({ size = "medium" }) => sizes[size]}
-	${({ variation = "primary" }) => variations[variation]} /* ${({
-		shape = "rect",
-	}) => shapes[shape]} */
+	${({ variation = "primary" }) => variations[variation]}
 `;
 
-export default Button;
+export default CircleButton;
