@@ -17,11 +17,10 @@ const SliderContainer = styled.div`
 	position: relative;
 	width: 100%;
 	height: 100%;
-	cursor: pointer;
 
-	/* 👇 Prevent mobile scrolling during drag */
-	touch-action: none;
+	cursor: pointer;
 `;
+
 const DotContainer = styled.div`
 	position: absolute;
 	top: 50%;
@@ -29,14 +28,6 @@ const DotContainer = styled.div`
 	pointer-events: none;
 	translate: -50% -50%;
 	z-index: 1000;
-
-	user-select: none;
-	-webkit-touch-callout: none;
-	-webkit-user-callout: none;
-	-webkit-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-modify: none;
-	-webkit-highlight: none;
 `;
 
 const HoverDotContainer = styled.div`
@@ -47,14 +38,6 @@ const HoverDotContainer = styled.div`
 	pointer-events: none;
 	translate: -50% -50%;
 	z-index: 500;
-
-	user-select: none;
-	-webkit-touch-callout: none;
-	-webkit-user-callout: none;
-	-webkit-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-modify: none;
-	-webkit-highlight: none;
 `;
 
 const TooltipContainer = styled.div`
@@ -65,14 +48,6 @@ const TooltipContainer = styled.div`
 	height: 100%;
 	z-index: 750;
 	user-select: none;
-
-	user-select: none;
-	-webkit-touch-callout: none;
-	-webkit-user-callout: none;
-	-webkit-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-modify: none;
-	-webkit-highlight: none;
 `;
 
 const ProgressContainer = styled.div`
